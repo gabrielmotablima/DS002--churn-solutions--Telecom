@@ -1,5 +1,6 @@
 import pandas as pd
 from dataclasses import dataclass
+from pandas.api.types import is_number
 
 @dataclass
 class CustomersDataPrep:
@@ -40,8 +41,8 @@ class CustomersDataPrep:
         ) -> pd.DataFrame:
         for feature in self.comma_string_numbers:
             df[feature] =      self.__comma_to_number(df[feature]) \
-                               if   df[feature].dtype == "object" \
-                               else df[feature]
+                          if   df[feature].dtype == "object" \
+                          else df[feature]
         return df
 
     def __binarize_features(
@@ -51,12 +52,14 @@ class CustomersDataPrep:
         ) -> pd.DataFrame:
         if conditionals:
             for feature in self.conditional_features:
-                df[feature] = df[feature].mask(df[feature] != "Yes", "No").map({"Yes": 1, "No": 0})
+                if not is_number(df[feature][0]):
+                    df[feature] = df[feature].mask(df[feature] != "Yes", "No").map({"Yes": 1, "No": 0})
 
         for feature in self.binary_features:
-            df[feature] =      df[feature].map({"Yes": 1, "No": 0}) \
-                          if   feature != "gender" \
-                          else df[feature].map({"Male": 1, "Female": 0})    
+            if not is_number(df[feature][0]):
+                df[feature] =      df[feature].map({"Yes": 1, "No": 0}) \
+                              if   feature != "gender" \
+                              else df[feature].map({"Male": 1, "Female": 0})    
         return df
 
     def prepare_data(
