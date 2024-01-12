@@ -3,6 +3,8 @@
 
 The current project is a basic approach of data analysis and machine learning modeling to get business insights and propose strategies of customer segmentation and churn prediction to mitigate the high churn rate.
 
+![cover](images/cover.png)
+
 ---
 ![1](images/1.png)
 ---
