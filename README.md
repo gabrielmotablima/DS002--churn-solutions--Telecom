@@ -18,7 +18,7 @@ The current project is a basic approach of data analysis and machine learning mo
 ---
 ![7](images/7.png)
 ---
-![8](images/8.png)
+![8](images/08.png)
 ---
 ![9](images/9.png)
 ---
