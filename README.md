@@ -1,4 +1,4 @@
-# DS004 - Churn Solutions (Telecom Client)
+# :tada: DS004 - Churn Solutions (Telecom Client)
 
 
 The current project is a basic approach of data analysis and machine learning modeling to get business insights and propose strategies of customer segmentation and churn prediction to mitigate the high churn rate.
