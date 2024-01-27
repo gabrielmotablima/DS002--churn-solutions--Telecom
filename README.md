@@ -100,7 +100,7 @@ The image below shows the machine learning algorithm, the standardizer, the enco
 
 Below, the confusion matrix, indicating that **the model can discover which 81% (377) of users are likely to churn**.
 <p align="center">
-<img src='https://github.com/gabrielmotablima/DS002--churn-solutions--Telecom/assets/31813682/459af066-a5d2-409c-82e6-b23d17db09d7' width='400'>
+<img src='https://github.com/gabrielmotablima/DS002--churn-solutions--Telecom/assets/31813682/1ff7993c-a37a-45d7-a104-012aefc7ef2d' width='400'>
 </p>
 
 
