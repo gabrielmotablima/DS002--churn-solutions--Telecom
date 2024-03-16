@@ -35,7 +35,7 @@ Data Dictionary:
 - TotalCharges: The total amount charged to the customer.
 - Churn: Whether the customer churned or not (Yes, No).
 <p align="center">
-<img src='images/schema.jpg' width='800'>
+<img src='images/schema.png' width='800'>
 </p>
 
 # :bar_chart: Step 2. Data analysis
